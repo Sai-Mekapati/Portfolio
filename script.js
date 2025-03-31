@@ -9,3 +9,8 @@ window.addEventListener('scroll', () => {
       }
     });
   });
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); // slight delay to ensure it runs after iframe loads
+  });
